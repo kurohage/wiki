@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>List</title>
+    </head>
+    <body>
+                <ol>
+        {% for page in pages %}
+            <a href="{{ page.get_absolute_url }}"> <!--  {% url 'page-detail' page.id %} -->
+
+                    <li>{{ page.title }}</li>
+            </a>
+        {% endfor %}
+                </ol>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Detail</title>
+    </head>
+    <body>
+    	<a href="{% url 'page-list' %}">Back to pages List</a>
+        <h1>{{ page.title }}</h1>
+        <ul>
+        	<li>{{ page.content }}</li>
+        	<li>{{ page.last_update }}</li>
+        </ul>
+    </body>
+</html>
